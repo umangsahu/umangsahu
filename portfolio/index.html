@@ -69,21 +69,36 @@
             <a href="https://github.com/umangsahu/product-service/tree/feature">Source code ↗</a>
             <a href="https://github.com/umangsahu/product-service/blob/feature/README.md">Setup guide ↗</a>
           </div>
-          <details class="examples">
-            <summary>View API examples</summary>
-        <pre><code><span class="comment"># Fetch a product by ID</span>
-<span class="prompt">$</span> curl -i localhost:8080/product/1
-
-<span class="comment"># Create a category</span>
-<span class="prompt">$</span> curl -X POST localhost:8080/category \
-    -H <span class="string">'Content-Type: application/json'</span> \
-    -d <span class="string">'{"categoryName":"Electronics"}'</span></code></pre>
-          </details>
+          <fieldset class="api-demo">
+            <legend>Explore the API</legend>
+            <input id="fetch-product" type="radio" name="request" checked>
+            <label for="fetch-product">Fetch product</label>
+            <input id="create-category" type="radio" name="request">
+            <label for="create-category">Create category</label>
+            <div class="request fetch">
+              <div class="route"><strong>GET</strong><code>/product/1</code></div>
+              <pre><code>curl -i localhost:8080/product/1</code></pre>
+            </div>
+            <div class="request create">
+              <div class="route"><strong>POST</strong><code>/category</code></div>
+              <pre><code>curl -X POST localhost:8080/category \
+  -H 'Content-Type: application/json' \
+  -d '{"categoryName":"Electronics"}'</code></pre>
+            </div>
+          </fieldset>
         </article>
         <article class="project" data-reveal>
           <p class="meta">Internal tools · Great Learning</p>
           <h3>Program Launch Management</h3>
           <p>A shared workspace for program setup, fees, themes, and publishing. Automated Playwright checks help teams verify pages before launch.</p>
+          <details class="workflow">
+            <summary>Explore the publishing workflow</summary>
+            <ol>
+              <li><strong>Configure</strong> program details, fees, and themes.</li>
+              <li><strong>Preview</strong> page and asset changes.</li>
+              <li><strong>Verify</strong> forms, images, and SEO metadata with Playwright.</li>
+            </ol>
+          </details>
           <a href="resume.html#experience">Read my contributions <span aria-hidden="true">→</span></a>
         </article>
       </div>

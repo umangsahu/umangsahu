@@ -39,14 +39,6 @@ h1 span { color: var(--green); }
 .primary:hover { background: var(--green); }
 summary { cursor: pointer; }
 summary:focus-visible, button:focus-visible { outline: 3px solid #38895a; outline-offset: 3px; }
-.examples { width: 100%; border-top: 1px solid var(--line); margin-top: .5rem; }
-.examples summary { padding-block: .65rem; color: var(--green); font-weight: 650; }
-.examples pre { padding: 1rem; color: #eff8eb; background: #172c24; border-radius: .4rem; }
-pre { padding: 1.15rem 0 .75rem; white-space: pre-wrap; overflow-wrap: anywhere; font: .8rem/1.75 var(--mono); }
-code { font: inherit; }
-.comment { color: #acc1b4; }
-.prompt, .string { color: #c1eca8; }
-
 .section { border-top: 1px solid var(--line); padding-block: clamp(1.75rem, 4vw, 3rem); }
 h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); letter-spacing: -.045em; line-height: 1.2; margin-bottom: 1.25rem; }
 h3 { font-size: 1.08rem; line-height: 1.4; }
@@ -116,4 +108,24 @@ footer a { padding-block: .65rem; }
 }
 @media (min-width: 48.01rem) {
   .project + .project { --reveal-delay: 65ms; }
+}
+
+.api-demo { min-width: 0; width: 100%; margin: 1rem 0 0; padding: .85rem; border: 1px solid var(--line); border-radius: .65rem; background: #f5f8f4; }
+.api-demo legend { padding-inline: .35rem; font-weight: 650; font-size: .9rem; }
+.api-demo input { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+.api-demo label { display: inline-flex; align-items: center; min-height: 44px; padding-inline: .7rem; border-radius: .4rem; cursor: pointer; font-size: .86rem; font-weight: 650; }
+.api-demo input:checked + label { color: white; background: var(--green); }
+.api-demo input:focus-visible + label { outline: 3px solid var(--ink); outline-offset: 2px; }
+.request { display: none; margin-top: .8rem; padding: .85rem; background: #182d25; color: #eff7ee; border-radius: .4rem; }
+#fetch-product:checked ~ .fetch, #create-category:checked ~ .create { display: block; }
+.route { display: flex; align-items: baseline; gap: .7rem; border-bottom: 1px solid #496153; padding-bottom: .5rem; }
+.route strong { color: #c0e8a8; font: bold .82rem var(--mono); }
+.request code { font-family: var(--mono); }
+.request pre { margin: .65rem 0 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .82rem; line-height: 1.6; }
+.workflow { width: 100%; margin-top: 1rem; padding: .5rem .85rem; border-left: 3px solid #86a686; background: #f5f8f4; }
+.workflow summary { padding-block: .55rem; font-weight: 650; color: var(--green); }
+.workflow ol { padding: .3rem 0 .5rem 1.35rem; }
+.workflow li + li { margin-top: .35rem; }
+@media (hover: hover) {
+  .api-demo input:not(:checked) + label:hover, .workflow summary:hover { color: var(--ink); text-decoration: underline; }
 }
