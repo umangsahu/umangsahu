@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- [REPLACE: page title and search description] -->
+  <title>Umang Sahu — Software Developer</title>
+  <meta name="description" content="Umang Sahu, a full-stack developer in Bengaluru focusing on Java, Spring Boot, and tools that simplify everyday work.">
+  <meta name="theme-color" content="#f8f6ef">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f6ef;
+      --surface: #fffdf8;
+      --ink: #242320;
+      --muted: #605a52;
+      --line: #d9d2c6;
+      --accent: #963b2c;
+      --tint: #f1e8dc;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-padding-top: 1.5rem; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.65 system-ui, sans-serif;
+    }
+    h1, h2, h3, p { margin: 0; }
+    a { color: var(--accent); text-underline-offset: .22em; }
+    a:hover { text-decoration-thickness: .14em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .wrap { width: min(100% - 2.5rem, 68rem); margin-inline: auto; }
+    .skip { position: absolute; inset-inline-start: 1rem; top: .5rem; padding: .55rem; background: var(--surface); transform: translateY(-180%); }
+    .skip:focus { transform: none; }
+    .masthead, nav ul, .links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.35rem; }
+    .masthead { justify-content: space-between; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+    .brand { font-weight: 720; color: var(--ink); text-decoration: none; }
+    nav ul { margin: 0; padding: 0; list-style: none; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-size: .9rem; }
+    .hero { padding-block: clamp(3rem, 9vw, 7rem); }
+    .role { color: var(--accent); font-size: .83rem; font-weight: 720; letter-spacing: .09em; text-transform: uppercase; }
+    h1 { margin-block: .4rem .8rem; font: 400 clamp(3rem, 9vw, 7rem)/1 var(--serif); letter-spacing: -.06em; }
+    .intro { max-width: 39rem; color: var(--muted); font-size: clamp(1.05rem, 1rem + .45vw, 1.28rem); }
+    .links { margin-top: 1rem; }
+    .links a, .project a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 650; }
+    .primary { padding-inline: .95rem; color: #fff; background: var(--accent); border-radius: .3rem; text-decoration: none; }
+    .primary:hover { text-decoration: underline; }
+    .section { padding-block: clamp(1.8rem, 5vw, 3.2rem); border-top: 1px solid var(--line); }
+    h2 { margin-bottom: 1.1rem; font: 400 clamp(1.9rem, 4vw, 2.75rem)/1.12 var(--serif); letter-spacing: -.035em; }
+    h3 { font-size: 1.1rem; line-height: 1.35; }
+    .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .project { padding: clamp(1rem, 3vw, 1.65rem); border: 1px solid var(--line); border-radius: .5rem; background: var(--surface); }
+    .project p { margin-top: .55rem; color: var(--muted); }
+    .project .meta { margin: 0 0 .55rem; color: var(--accent); font-size: .83rem; font-weight: 650; }
+    .project a { margin-top: .35rem; }
+    .experience { list-style: none; margin: 0; padding: 0; }
+    .experience li { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: .2rem 1rem; padding: .85rem 0; border-bottom: 1px solid var(--line); }
+    .experience li:last-child { border: 0; }
+    .dates, .experience p { color: var(--muted); }
+    .dates { font-size: .88rem; }
+    .skill-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem 1.5rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: .65rem 0 0; list-style: none; }
+    .tags li { padding: .18rem .65rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--tint); font-size: .9rem; }
+    footer { padding-block: 1rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 42rem) {
+      .projects, .experience li { grid-template-columns: 1fr; }
+      .skill-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 24rem) {
+      .wrap { width: calc(100% - 2rem); }
+      .skill-groups { grid-template-columns: 1fr; }
+      nav ul { column-gap: .85rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <!-- [REPLACE: name in header, hero, title and footer] -->
+    <a class="brand" href="#intro">Umang Sahu</a>
+    <nav aria-label="Portfolio">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" id="intro" aria-labelledby="name">
+      <!-- [REPLACE: professional title, location and bio] -->
+      <p class="role">Software Developer · Bengaluru</p>
+      <h1 id="name">Umang Sahu</h1>
+      <p class="intro">I build full-stack tools that make everyday work easier. At Great Learning, I work on program launch and publishing workflows. My current focus is backend development with Java and Spring Boot.</p>
+      <div class="links">
+        <a class="primary" href="#work">View selected work</a>
+        <!-- [REPLACE: GitHub and LinkedIn profile URLs, if needed] -->
+        <a href="https://github.com/umangsahu">GitHub</a>
+        <a href="https://linkedin.com/in/umangsahu">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Selected work</h2>
+      <div class="projects">
+        <!-- [REPLACE: project title, stack, summary and repository URL] -->
+        <article class="project">
+          <p class="meta">Java · Spring Boot · MySQL</p>
+          <h3>Product Service</h3>
+          <p>A REST API for managing products and categories, backed by MySQL and Spring Data JPA.</p>
+          <a href="https://github.com/umangsahu/product-service">Product Service on GitHub</a>
+        </article>
+        <article class="project">
+          <p class="meta">Spring Boot · FastAPI · In progress</p>
+          <h3>Financial Analyst Manager</h3>
+          <p>A tool for researching Indian equities. Spring Boot handles the core application and market data, while FastAPI handles valuation and filing summaries.</p>
+          <!-- [REPLACE: add a public project URL and descriptive link text here once available] -->
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <!-- [REPLACE: dates, employers, titles and outcomes] -->
+      <ol class="experience">
+        <li>
+          <span class="dates">Aug 2025–Present</span>
+          <div><h3>Associate SDE · Great Learning</h3><p>Helped cut program launch turnaround from 3 days to about 4 hours.</p></div>
+        </li>
+        <li>
+          <span class="dates">Jul 2024–Jul 2025</span>
+          <div><h3>Software Developer · MountBlue at Great Learning</h3><p>Worked on Connect Now, which contributed to about 30% more enrollments.</p></div>
+        </li>
+        <li>
+          <span class="dates">Jun 2023–Mar 2024</span>
+          <div><h3>Frontend Developer · Time Wheel Online</h3><p>Built web interfaces.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Core skills</h2>
+      <!-- [REPLACE: skill group names and individual tags] -->
+      <div class="skill-groups">
+        <div><h3>Backend</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>FastAPI</li></ul></div>
+        <div><h3>Frontend</h3><ul class="tags"><li>TypeScript</li><li>React</li><li>Next.js</li></ul></div>
+        <div><h3>Data &amp; delivery</h3><ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Docker</li><li>GitHub Actions</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="links">
+        <a href="https://linkedin.com/in/umangsahu">Message me on LinkedIn</a>
+        <a href="https://github.com/umangsahu?tab=repositories">Browse my GitHub repositories</a>
+        <!-- [REPLACE: example email and link label before enabling]
+        <a href="mailto:you@example.com">Email me</a>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">Umang Sahu · Bengaluru, India</footer>
+</body>
+</html>
