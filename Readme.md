@@ -6,13 +6,11 @@ I'm a full-stack software developer based in Bengaluru. At Great Learning, I bui
 
 ## Work experience
 
-```mermaid
-flowchart LR
-    A["Jun 2023 – Mar 2024<br/>Time Wheel Online<br/>Frontend Developer<br/>Built web interfaces"]
-    B["Jul 2024 – Jul 2025<br/>MountBlue at Great Learning<br/>Software Developer<br/>Connect Now: ≈30% more enrollments"]
-    C["Aug 2025 – Present<br/>Great Learning<br/>Associate SDE<br/>Launch time: 3 days to ≈4 hours"]
-    A --> B --> C
-```
+| Dates | Role | Highlight |
+| --- | --- | --- |
+| Aug 2025–Present | **Associate SDE**, Great Learning | Cut program launch time from 3 days to ~4 hours |
+| Jul 2024–Jul 2025 | **Software Developer**, MountBlue at Great Learning | Connect Now contributed to ~30% more enrollments |
+| Jun 2023–Mar 2024 | **Frontend Developer**, Time Wheel Online | Built web interfaces |
 
 ## Projects
 
