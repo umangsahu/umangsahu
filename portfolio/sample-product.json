@@ -1,0 +1,6 @@
+{
+  "id": 1,
+  "productName": "Keyboard",
+  "productPrice": 1500,
+  "category": { "id": 1, "categoryName": "Electronics" }
+}

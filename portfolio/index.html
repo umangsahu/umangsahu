@@ -10,6 +10,7 @@
   <meta name="theme-color" content="#f7f8f4">
   <link rel="stylesheet" href="portfolio.css">
   <script src="reveals.js" defer></script>
+  <script src="api-demo.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -69,23 +70,19 @@
             <a href="https://github.com/umangsahu/product-service/tree/feature">Source code ↗</a>
             <a href="https://github.com/umangsahu/product-service/blob/feature/README.md">Setup guide ↗</a>
           </div>
-          <fieldset class="api-demo">
-            <legend>Explore the API</legend>
-            <input id="fetch-product" type="radio" name="request" checked>
-            <label for="fetch-product">Fetch product</label>
-            <input id="create-category" type="radio" name="request">
-            <label for="create-category">Create category</label>
-            <div class="request fetch">
-              <div class="route"><strong>GET</strong><code>/product/1</code></div>
-              <pre><code>curl -i localhost:8080/product/1</code></pre>
+          <div class="api-demo">
+            <p><strong>API demo</strong> · Sample catalog</p>
+            <div class="demo-actions" hidden>
+              <button type="button" data-product>Fetch product</button>
+              <button type="button" data-category>Create category</button>
             </div>
-            <div class="request create">
-              <div class="route"><strong>POST</strong><code>/category</code></div>
-              <pre><code>curl -X POST localhost:8080/category \
-  -H 'Content-Type: application/json' \
-  -d '{"categoryName":"Electronics"}'</code></pre>
+            <p class="demo-status" role="status"></p>
+            <div class="request" hidden>
+              <div class="route"><strong></strong><code></code></div>
+              <pre><code></code></pre>
             </div>
-          </fieldset>
+            <noscript><a href="sample-product.json">View sample product JSON</a></noscript>
+          </div>
         </article>
         <article class="project" data-reveal>
           <p class="meta">Internal tools · Great Learning</p>
@@ -99,7 +96,14 @@
               <li><strong>Verify</strong> forms, images, and SEO metadata with Playwright.</li>
             </ol>
           </details>
-          <a href="resume.html#experience">Read my contributions <span aria-hidden="true">→</span></a>
+          <details class="contributions">
+            <summary>Read my contributions</summary>
+            <ul>
+              <li>Built the React interface that teams used to launch over 50 programs.</li>
+              <li>Added audit logs so teams could trace who published a change and why.</li>
+              <li>Automated release checks with Playwright, replacing 1.5–2 hours of manual verification.</li>
+            </ul>
+          </details>
         </article>
       </div>
     </section>
