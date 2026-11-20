@@ -7,80 +7,14 @@
   <!-- [REPLACE: page title and search description] -->
   <title>Umang Sahu — Software Developer</title>
   <meta name="description" content="Umang Sahu, a full-stack developer in Bengaluru focusing on Java, Spring Boot, and tools that simplify everyday work.">
-  <meta name="theme-color" content="#f8f6ef">
-  <style>
-    :root {
-      color-scheme: light;
-      --paper: #f8f6ef;
-      --surface: #fffdf8;
-      --ink: #242320;
-      --muted: #605a52;
-      --line: #d9d2c6;
-      --accent: #963b2c;
-      --tint: #f1e8dc;
-      --serif: Georgia, "Times New Roman", serif;
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-padding-top: 1.5rem; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font: 1rem/1.65 system-ui, sans-serif;
-    }
-    h1, h2, h3, p { margin: 0; }
-    a { color: var(--accent); text-underline-offset: .22em; }
-    a:hover { text-decoration-thickness: .14em; }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-    .wrap { width: min(100% - 2.5rem, 68rem); margin-inline: auto; }
-    .skip { position: absolute; inset-inline-start: 1rem; top: .5rem; padding: .55rem; background: var(--surface); transform: translateY(-180%); }
-    .skip:focus { transform: none; }
-    .masthead, nav ul, .links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.35rem; }
-    .masthead { justify-content: space-between; padding-block: 1rem; border-bottom: 1px solid var(--line); }
-    .brand { font-weight: 720; color: var(--ink); text-decoration: none; }
-    nav ul { margin: 0; padding: 0; list-style: none; }
-    nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-size: .9rem; }
-    .hero { padding-block: clamp(3rem, 9vw, 7rem); }
-    .role { color: var(--accent); font-size: .83rem; font-weight: 720; letter-spacing: .09em; text-transform: uppercase; }
-    h1 { margin-block: .4rem .8rem; font: 400 clamp(3rem, 9vw, 7rem)/1 var(--serif); letter-spacing: -.06em; }
-    .intro { max-width: 39rem; color: var(--muted); font-size: clamp(1.05rem, 1rem + .45vw, 1.28rem); }
-    .links { margin-top: 1rem; }
-    .links a, .project a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 650; }
-    .primary { padding-inline: .95rem; color: #fff; background: var(--accent); border-radius: .3rem; text-decoration: none; }
-    .primary:hover { text-decoration: underline; }
-    .section { padding-block: clamp(1.8rem, 5vw, 3.2rem); border-top: 1px solid var(--line); }
-    h2 { margin-bottom: 1.1rem; font: 400 clamp(1.9rem, 4vw, 2.75rem)/1.12 var(--serif); letter-spacing: -.035em; }
-    h3 { font-size: 1.1rem; line-height: 1.35; }
-    .projects { max-width: 40rem; }
-    .project { padding: clamp(1rem, 3vw, 1.65rem); border: 1px solid var(--line); border-radius: .5rem; background: var(--surface); }
-    .project p { margin-top: .55rem; color: var(--muted); }
-    .project .meta { margin: 0 0 .55rem; color: var(--accent); font-size: .83rem; font-weight: 650; }
-    .project a { margin-top: .35rem; }
-    .experience { list-style: none; margin: 0; padding: 0; }
-    .experience li { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: .2rem 1rem; padding: .85rem 0; border-bottom: 1px solid var(--line); }
-    .experience li:last-child { border: 0; }
-    .dates, .experience p { color: var(--muted); }
-    .dates { font-size: .88rem; }
-    .skill-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem 1.5rem; }
-    .tags { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: .65rem 0 0; list-style: none; }
-    .tags li { padding: .18rem .65rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--tint); font-size: .9rem; }
-    footer { padding-block: 1rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
-    @media (max-width: 42rem) {
-      .experience li { grid-template-columns: 1fr; }
-      .skill-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 24rem) {
-      .wrap { width: calc(100% - 2rem); }
-      .skill-groups { grid-template-columns: 1fr; }
-      nav ul { column-gap: .85rem; }
-    }
-  </style>
+  <meta name="theme-color" content="#f7f8f4">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="masthead wrap">
     <!-- [REPLACE: name in header, hero, title and footer] -->
-    <a class="brand" href="#intro">Umang Sahu</a>
+    <a class="brand" href="#intro"><span class="mark" aria-hidden="true">u.</span> Umang Sahu</a>
     <nav aria-label="Portfolio">
       <ul>
         <li><a href="#work">Work</a></li>
@@ -94,16 +28,26 @@
   <main class="wrap" id="main">
     <section class="hero" id="intro" aria-labelledby="name">
       <!-- [REPLACE: professional title, location and bio] -->
-      <p class="role">Software Developer · Bengaluru</p>
-      <h1 id="name">Umang Sahu</h1>
-      <p class="intro">I build full-stack tools that make everyday work easier. At Great Learning, I work on program launch and publishing workflows. My current focus is backend development with Java and Spring Boot.</p>
-      <div class="links">
-        <a class="primary" href="#work">View selected work</a>
-        <a href="resume.html">View résumé</a>
-        <!-- [REPLACE: GitHub and LinkedIn profile URLs, if needed] -->
-        <a href="https://github.com/umangsahu">GitHub</a>
-        <a href="https://linkedin.com/in/umangsahu">LinkedIn</a>
+      <div class="bio">
+        <p class="role">Full-stack developer <span> / </span> Bengaluru</p>
+        <h1 id="name">Umang Sahu<span>.</span></h1>
+        <p class="intro">I build tools for the people who launch and maintain websites. At Great Learning, that means working across React interfaces, backend APIs, and automated publishing checks.</p>
+        <div class="links">
+          <a class="primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a href="resume.html">View résumé</a>
+        </div>
       </div>
+      <figure class="terminal">
+        <figcaption><span class="dot" aria-hidden="true"></span> product-service <span class="type">REST API</span></figcaption>
+        <pre><code><span class="comment"># Fetch a product by ID</span>
+<span class="prompt">$</span> curl -i localhost:8080/product/1
+
+<span class="comment"># Create a category</span>
+<span class="prompt">$</span> curl -X POST localhost:8080/category \
+    -H <span class="string">'Content-Type: application/json'</span> \
+    -d <span class="string">'{"categoryName":"Electronics"}'</span></code></pre>
+        <a href="https://github.com/umangsahu/product-service/tree/feature">Browse the source <span aria-hidden="true">↗</span></a>
+      </figure>
     </section>
 
     <section class="section" id="work" aria-labelledby="work-title">
@@ -111,10 +55,16 @@
       <div class="projects">
         <!-- [REPLACE: project title, stack, summary and repository URL] -->
         <article class="project">
-          <p class="meta">Java · Spring Boot · MySQL</p>
+          <p class="meta">Backend · Personal project</p>
           <h3>Product Service</h3>
-          <p>A REST API for managing products and categories, backed by MySQL and Spring Data JPA.</p>
-          <a href="https://github.com/umangsahu/product-service">Product Service on GitHub</a>
+          <p>A Java and Spring Boot API for managing a product catalog. Products reference categories stored in MySQL through Spring Data JPA.</p>
+          <a href="https://github.com/umangsahu/product-service/blob/feature/README.md">API setup &amp; examples <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project">
+          <p class="meta">Internal tools · Great Learning</p>
+          <h3>Program Launch Management</h3>
+          <p>A shared workspace for program setup, fees, themes, and publishing. Automated Playwright checks help teams verify pages before launch.</p>
+          <a href="resume.html#experience">My contributions <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </section>
