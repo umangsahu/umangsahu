@@ -86,3 +86,35 @@ footer a { padding-block: .65rem; }
   .hero { padding-block: 2rem; gap: .35rem; }
   .hero h1 { margin-bottom: .4rem; }
 }
+
+.about { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(1.2rem, 4vw, 4rem); }
+.about-copy { max-width: 48ch; color: var(--muted); }
+.about .skill-groups { grid-template-columns: 1fr; gap: .55rem; align-content: center; }
+.about .skill-groups > div { display: grid; grid-template-columns: 8rem 1fr; align-items: baseline; gap: .5rem; }
+.about .skill-groups h3 { font-size: .9rem; }
+.about .tags { margin: 0; }
+.project { border-top: 3px solid var(--green); }
+.project:focus-within { border-color: var(--green); }
+.contact { padding-inline: clamp(1.2rem, 4vw, 3rem); background: #e6ece3; border-radius: .75rem; margin-bottom: 2rem; }
+.contact .links { margin-top: 0; }
+@media (max-width: 48rem) {
+  .about { grid-template-columns: 1fr; }
+}
+@media (max-width: 35rem) {
+  .about .skill-groups > div { grid-template-columns: 1fr; gap: .25rem; }
+}
+
+/* Change duration, distance, or the desktop card delay to tune the motion. */
+@media screen and (prefers-reduced-motion: no-preference) {
+  .revealed { animation: reveal-in 360ms ease-out var(--reveal-delay, 0ms) backwards; }
+  .revealed:focus-within { animation: none; }
+  .primary { transition: background-color 140ms ease, transform 140ms ease; }
+  .primary:active { transform: translateY(1px); }
+  @keyframes reveal-in {
+    from { opacity: .84; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+@media (min-width: 48.01rem) {
+  .project + .project { --reveal-delay: 65ms; }
+}

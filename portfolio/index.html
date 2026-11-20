@@ -9,6 +9,7 @@
   <meta name="description" content="Umang Sahu, a full-stack developer in Bengaluru focusing on Java, Spring Boot, and tools that simplify everyday work.">
   <meta name="theme-color" content="#f7f8f4">
   <link rel="stylesheet" href="portfolio.css">
+  <script src="reveals.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -17,9 +18,9 @@
     <a class="brand" href="#intro"><span class="mark" aria-hidden="true">u.</span> Umang Sahu</a>
     <nav aria-label="Portfolio">
       <ul>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -28,12 +29,12 @@
   <main class="wrap" id="main">
     <section class="hero" id="intro" aria-labelledby="name">
       <!-- [REPLACE: professional title, location and bio] -->
-      <div class="bio">
+      <div class="bio" data-reveal>
         <p class="role">Full-stack developer <span> / </span> Bengaluru</p>
         <h1 id="name">Umang Sahu<span>.</span></h1>
       </div>
-      <div class="hero-content">
-        <p class="intro">I build publishing tools at Great Learning, from React interfaces to automated release checks. My backend work focuses on Java, Spring Boot, and REST APIs.</p>
+      <div class="hero-content" data-reveal>
+        <p class="intro">I build publishing tools at Great Learning and backend services with Java and Spring Boot.</p>
         <div class="links">
           <a class="primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
           <a href="resume.html">View résumé</a>
@@ -43,11 +44,24 @@
 
     </section>
 
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div data-reveal>
+        <h2 id="about-title">About me</h2>
+        <p class="about-copy">I started in frontend development. Building internal tools at Great Learning took me deeper into APIs, database queries, and the tests that catch problems before a page goes live.</p>
+      </div>
+      <!-- [REPLACE: skill group names and individual tags] -->
+      <div class="skill-groups" id="skills" data-reveal>
+        <div><h3>Backend</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>FastAPI</li></ul></div>
+        <div><h3>Frontend</h3><ul class="tags"><li>TypeScript</li><li>React</li><li>Next.js</li></ul></div>
+        <div><h3>Data &amp; delivery</h3><ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Docker</li><li>GitHub Actions</li></ul></div>
+      </div>
+    </section>
+
     <section class="section" id="work" aria-labelledby="work-title">
-      <h2 id="work-title">Selected work</h2>
+      <h2 id="work-title" data-reveal>Selected projects</h2>
       <div class="projects">
         <!-- [REPLACE: project title, stack, summary and repository URL] -->
-        <article class="project">
+        <article class="project" data-reveal>
           <p class="meta">Backend · Personal project</p>
           <h3>Product Service</h3>
           <p>A Java and Spring Boot API for managing a product catalog. Products reference categories stored in MySQL through Spring Data JPA.</p>
@@ -66,7 +80,7 @@
     -d <span class="string">'{"categoryName":"Electronics"}'</span></code></pre>
           </details>
         </article>
-        <article class="project">
+        <article class="project" data-reveal>
           <p class="meta">Internal tools · Great Learning</p>
           <h3>Program Launch Management</h3>
           <p>A shared workspace for program setup, fees, themes, and publishing. Automated Playwright checks help teams verify pages before launch.</p>
@@ -76,38 +90,30 @@
     </section>
 
     <section class="section" id="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title">Experience</h2>
+      <h2 id="experience-title" data-reveal>Experience</h2>
       <!-- [REPLACE: dates, employers, titles and outcomes] -->
       <ol class="experience">
-        <li>
+        <li data-reveal>
           <span class="dates">Aug 2025–Present</span>
           <div><h3>Associate SDE · Great Learning</h3><p>Helped cut program launch turnaround from 3 days to about 4 hours.</p></div>
         </li>
-        <li>
+        <li data-reveal>
           <span class="dates">Jul 2024–Jul 2025</span>
           <div><h3>Software Developer · MountBlue at Great Learning</h3><p>Worked on Connect Now, which contributed to about 30% more enrollments.</p></div>
         </li>
-        <li>
+        <li data-reveal>
           <span class="dates">Jun 2023–Mar 2024</span>
           <div><h3>Frontend Developer · Time Wheel Online</h3><p>Built web interfaces.</p></div>
         </li>
       </ol>
     </section>
 
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Core skills</h2>
-      <!-- [REPLACE: skill group names and individual tags] -->
-      <div class="skill-groups">
-        <div><h3>Backend</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>FastAPI</li></ul></div>
-        <div><h3>Frontend</h3><ul class="tags"><li>TypeScript</li><li>React</li><li>Next.js</li></ul></div>
-        <div><h3>Data &amp; delivery</h3><ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Docker</li><li>GitHub Actions</li></ul></div>
-      </div>
-    </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
+
+    <section class="section contact" data-reveal id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
       <div class="links">
-        <a href="https://linkedin.com/in/umangsahu">Message me on LinkedIn</a>
+        <a class="primary" href="https://linkedin.com/in/umangsahu">Message me on LinkedIn</a>
         <a href="https://github.com/umangsahu?tab=repositories">Browse my GitHub repositories</a>
         <!-- [REPLACE: example email and link label before enabling]
         <a href="mailto:you@example.com">Email me</a>
