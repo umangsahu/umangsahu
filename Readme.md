@@ -2,7 +2,7 @@
 
 I'm a full-stack software developer based in Bengaluru. At Great Learning, I build tools that help teams launch programs and update their websites. My current focus is backend development with Java and Spring Boot.
 
-[LinkedIn](https://linkedin.com/in/umangsahu)
+[LinkedIn](https://linkedin.com/in/umangsahu) · [Résumé source](portfolio/resume.html)
 
 ## Work experience
 
