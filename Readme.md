@@ -17,8 +17,13 @@ I'm a full-stack software developer based in Bengaluru. At Great Learning, I bui
 - **[Product Service](https://github.com/umangsahu/product-service)** — Spring Boot REST API for products and categories, backed by MySQL and Spring Data JPA.
 - **Financial Analyst Manager** — A work-in-progress tool for Indian equities. Spring Boot handles the core application and market data. FastAPI handles valuation, anomaly detection, and financial filing summaries.
 
-## Tech stack
+## Skills
 
-- **Backend** — Java, Spring Boot, Node.js, Python, FastAPI
-- **Frontend** — JavaScript, TypeScript, React, Next.js
-- **Data and tooling** — PostgreSQL, MySQL, MongoDB, Docker, GitHub Actions, AWS
+| Area | Skills |
+| --- | --- |
+| Languages | Java, JavaScript, TypeScript, Python, Ruby, C++, SQL |
+| Backend | Spring, Spring Boot, Node.js, Express.js, FastAPI, REST APIs |
+| Frontend | React, Next.js, Redux Toolkit, HTML, CSS |
+| Databases | MySQL, PostgreSQL, MongoDB |
+| Cloud and tooling | AWS (EC2, S3), Docker, Git, GitHub Actions |
+| Engineering | System design, microservices, design patterns, unit testing, TDD, CI/CD, performance optimization |
