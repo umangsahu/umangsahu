@@ -8,15 +8,11 @@ I'm a full-stack software developer based in Bengaluru. At Great Learning, I bui
 
 ```mermaid
 flowchart TD
-    frontend["Jun 2023 – Mar 2024<br/>Time Wheel Online<br/>Frontend Developer"]
-    mountblue["Jul 2024 – Jul 2025<br/>MountBlue Technologies · at Great Learning<br/>Software Developer"]
-    greatlearning["Aug 2025 – Present<br/>Great Learning<br/>Associate Software Development Engineer"]
+    first["Jun 2023 – Mar 2024<br/>Time Wheel Online<br/>Frontend Developer<br/>Built web interfaces"]
+    second["Jul 2024 – Jul 2025<br/>MountBlue Technologies · at Great Learning<br/>Software Developer<br/>Built lead capture and enrollment flows<br/>Connect Now contributed to ≈30% more enrollments"]
+    current["Aug 2025 – Present<br/>Great Learning<br/>Associate Software Development Engineer<br/>Cut program launch time from 3 days to ≈4 hours<br/>Built live previews and self-serve theme updates"]
 
-    frontend --> mountblue --> greatlearning
-    frontend --- interfaces["Built web interfaces"]
-    mountblue --- enrollment["Built lead capture and enrollment flows<br/>Connect Now contributed to ≈30% more enrollments"]
-    greatlearning --- launches["Program launch turnaround: 3 days to ≈4 hours"]
-    greatlearning --- automation["Built live asset previews<br/>Self-serve theme and font updates in under 5 minutes"]
+    first --> second --> current
 ```
 
 ## Projects
