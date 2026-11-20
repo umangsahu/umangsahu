@@ -16,7 +16,6 @@ I'm a full-stack software developer based in Bengaluru. At Great Learning, I bui
 
 - **[Portfolio website](portfolio/index.html)** — Source code for my single-page portfolio.
 - **[Product Service](https://github.com/umangsahu/product-service)** — Spring Boot REST API for products and categories, backed by MySQL and Spring Data JPA.
-- **Financial Analyst Manager** — A work-in-progress tool for Indian equities. Spring Boot handles the core application and market data. FastAPI handles valuation, anomaly detection, and financial filing summaries.
 
 ## Skills
 

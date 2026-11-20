@@ -51,7 +51,7 @@
     .section { padding-block: clamp(1.8rem, 5vw, 3.2rem); border-top: 1px solid var(--line); }
     h2 { margin-bottom: 1.1rem; font: 400 clamp(1.9rem, 4vw, 2.75rem)/1.12 var(--serif); letter-spacing: -.035em; }
     h3 { font-size: 1.1rem; line-height: 1.35; }
-    .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .projects { max-width: 40rem; }
     .project { padding: clamp(1rem, 3vw, 1.65rem); border: 1px solid var(--line); border-radius: .5rem; background: var(--surface); }
     .project p { margin-top: .55rem; color: var(--muted); }
     .project .meta { margin: 0 0 .55rem; color: var(--accent); font-size: .83rem; font-weight: 650; }
@@ -66,7 +66,7 @@
     .tags li { padding: .18rem .65rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--tint); font-size: .9rem; }
     footer { padding-block: 1rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
     @media (max-width: 42rem) {
-      .projects, .experience li { grid-template-columns: 1fr; }
+      .experience li { grid-template-columns: 1fr; }
       .skill-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 24rem) {
@@ -114,12 +114,6 @@
           <h3>Product Service</h3>
           <p>A REST API for managing products and categories, backed by MySQL and Spring Data JPA.</p>
           <a href="https://github.com/umangsahu/product-service">Product Service on GitHub</a>
-        </article>
-        <article class="project">
-          <p class="meta">Spring Boot · FastAPI · In progress</p>
-          <h3>Financial Analyst Manager</h3>
-          <p>A tool for researching Indian equities. Spring Boot handles the core application and market data, while FastAPI handles valuation and filing summaries.</p>
-          <!-- [REPLACE: add a public project URL and descriptive link text here once available] -->
         </article>
       </div>
     </section>
