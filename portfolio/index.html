@@ -31,23 +31,16 @@
       <div class="bio">
         <p class="role">Full-stack developer <span> / </span> Bengaluru</p>
         <h1 id="name">Umang Sahu<span>.</span></h1>
-        <p class="intro">I build tools for the people who launch and maintain websites. At Great Learning, that means working across React interfaces, backend APIs, and automated publishing checks.</p>
+      </div>
+      <div class="hero-content">
+        <p class="intro">I build publishing tools at Great Learning, from React interfaces to automated release checks. My backend work focuses on Java, Spring Boot, and REST APIs.</p>
         <div class="links">
           <a class="primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
           <a href="resume.html">View résumé</a>
+          <a href="https://linkedin.com/in/umangsahu">Contact on LinkedIn</a>
         </div>
       </div>
-      <figure class="terminal">
-        <figcaption><span class="dot" aria-hidden="true"></span> product-service <span class="type">REST API</span></figcaption>
-        <pre><code><span class="comment"># Fetch a product by ID</span>
-<span class="prompt">$</span> curl -i localhost:8080/product/1
 
-<span class="comment"># Create a category</span>
-<span class="prompt">$</span> curl -X POST localhost:8080/category \
-    -H <span class="string">'Content-Type: application/json'</span> \
-    -d <span class="string">'{"categoryName":"Electronics"}'</span></code></pre>
-        <a href="https://github.com/umangsahu/product-service/tree/feature">Browse the source <span aria-hidden="true">↗</span></a>
-      </figure>
     </section>
 
     <section class="section" id="work" aria-labelledby="work-title">
@@ -58,13 +51,26 @@
           <p class="meta">Backend · Personal project</p>
           <h3>Product Service</h3>
           <p>A Java and Spring Boot API for managing a product catalog. Products reference categories stored in MySQL through Spring Data JPA.</p>
-          <a href="https://github.com/umangsahu/product-service/blob/feature/README.md">API setup &amp; examples <span aria-hidden="true">↗</span></a>
+          <div class="project-links">
+            <a href="https://github.com/umangsahu/product-service/tree/feature">Source code ↗</a>
+            <a href="https://github.com/umangsahu/product-service/blob/feature/README.md">Setup guide ↗</a>
+          </div>
+          <details class="examples">
+            <summary>View API examples</summary>
+        <pre><code><span class="comment"># Fetch a product by ID</span>
+<span class="prompt">$</span> curl -i localhost:8080/product/1
+
+<span class="comment"># Create a category</span>
+<span class="prompt">$</span> curl -X POST localhost:8080/category \
+    -H <span class="string">'Content-Type: application/json'</span> \
+    -d <span class="string">'{"categoryName":"Electronics"}'</span></code></pre>
+          </details>
         </article>
         <article class="project">
           <p class="meta">Internal tools · Great Learning</p>
           <h3>Program Launch Management</h3>
           <p>A shared workspace for program setup, fees, themes, and publishing. Automated Playwright checks help teams verify pages before launch.</p>
-          <a href="resume.html#experience">My contributions <span aria-hidden="true">→</span></a>
+          <a href="resume.html#experience">Read my contributions <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </section>
@@ -110,6 +116,6 @@
     </section>
   </main>
 
-  <footer class="wrap">Umang Sahu · Bengaluru, India</footer>
+  <footer class="wrap"><span>Umang Sahu · Bengaluru, India</span><a href="#intro">Back to top ↑</a></footer>
 </body>
 </html>

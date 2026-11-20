@@ -19,10 +19,14 @@
     .meta { color: #465b51; }
     ul { padding-left: 1.25rem; }
     li + li { margin-top: .35rem; }
+    .actions { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .actions a, .actions button { min-height: 44px; display: inline-flex; align-items: center; }
+    .actions button { background: #182a24; color: white; font: inherit; border: 0; padding-inline: 1rem; border-radius: .45rem; cursor: pointer; }
+    .actions button:focus-visible { outline: 3px solid #38895a; outline-offset: 3px; }
     @media print {
       body { background: white; color: black; font-size: 10pt; }
       .page { width: auto; margin: 0; }
-      .back { display: none; }
+      .actions { display: none; }
       h2, h3 { break-after: avoid; }
     }
   </style>
@@ -30,7 +34,9 @@
 <body>
   <main class="page">
     <header>
-      <a class="back" href="./">Back to portfolio</a>
+      <div class="actions">
+        <a href="./">← Back to portfolio</a>
+      </div>
       <h1>Umang Sahu</h1>
       <p class="meta">Full-stack Software Developer · Bengaluru, India</p>
       <p><a href="https://linkedin.com/in/umangsahu">LinkedIn</a> · <a href="https://github.com/umangsahu">GitHub</a></p>
@@ -72,5 +78,12 @@
       <p>Bachelor of Technology · 2019–2023 · Jhansi, India</p>
     </section>
   </main>
+  <script>
+    const printButton = document.createElement('button');
+    printButton.type = 'button';
+    printButton.textContent = 'Print / Save PDF';
+    printButton.addEventListener('click', () => window.print());
+    document.querySelector('.actions').append(printButton);
+  </script>
 </body>
 </html>
