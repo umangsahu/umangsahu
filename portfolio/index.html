@@ -1,12 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="XD-Gc328hvNBhitzA7bqlmppkahEA4vAFmDCJ1_4JKY" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="XD-Gc328hvNBhitzA7bqlmppkahEA4vAFmDCJ1_4JKY" />
   <!-- [REPLACE: page title and search description] -->
-  <title>Umang Sahu — Software Developer</title>
-  <meta name="description" content="Umang Sahu, a full-stack developer in Bengaluru focusing on Java, Spring Boot, and tools that simplify everyday work.">
+  <title>Umang Sahu | Java &amp; Spring Boot Developer in Bengaluru</title>
+  <meta name="description" content="Explore Umang Sahu’s Java and Spring Boot catalog API and his work on the publishing platform teams used to launch 50+ programs at Great Learning.">
+  <link rel="canonical" href="https://umang-sahu.com/">
+  <link rel="icon" type="image/png" sizes="384x384" href="favicon.png">
+  <meta property="og:title" content="Umang Sahu | Java &amp; Spring Boot Developer in Bengaluru">
+  <meta property="og:description" content="Explore Umang Sahu’s Java and Spring Boot catalog API and his work on the publishing platform teams used to launch 50+ programs at Great Learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://umang-sahu.com/">
+  <meta property="og:image" content="https://umang-sahu.com/favicon.png">
+  <meta property="og:image:alt" content="Umang Sahu’s green u. monogram">
   <meta name="theme-color" content="#f7f8f4">
   <link rel="stylesheet" href="portfolio.css">
   <script src="reveals.js" defer></script>
@@ -36,7 +44,7 @@
         <h1 id="name">Umang Sahu<span>.</span></h1>
       </div>
       <div class="hero-content" data-reveal>
-        <p class="intro">I build publishing tools at Great Learning and backend services with Java and Spring Boot.</p>
+        <p class="intro">I build REST APIs with Java and Spring Boot. At Great Learning, I helped build the publishing platform our teams used to launch 50+ programs.</p>
         <div class="links">
           <a class="primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
           <a href="resume.html" target="_blank" rel="noopener" aria-describedby="new-tab-note">View résumé <span aria-hidden="true">↗</span></a>
@@ -49,13 +57,13 @@
     <section class="section about" id="about" aria-labelledby="about-title">
       <div data-reveal>
         <h2 id="about-title">About me</h2>
-        <p class="about-copy">I started in frontend development. Building internal tools at Great Learning took me deeper into APIs, database queries, and the tests that catch problems before a page goes live.</p>
+        <p class="about-copy">I started by building web interfaces. At Great Learning, I moved into backend work alongside a senior developer. We sped up API responses with caching and fixed queries that fetched database records one at a time.</p>
       </div>
       <!-- [REPLACE: skill group names and individual tags] -->
       <div class="skill-groups" id="skills" data-reveal>
-        <div><h3>Backend</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>FastAPI</li></ul></div>
+        <div><h3>Backend</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>Ruby on Rails</li><li>FastAPI</li></ul></div>
         <div><h3>Frontend</h3><ul class="tags"><li>TypeScript</li><li>React</li><li>Next.js</li></ul></div>
-        <div><h3>Data &amp; delivery</h3><ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Docker</li><li>GitHub Actions</li></ul></div>
+        <div><h3>Data &amp; delivery</h3><ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Docker</li><li>GitHub Actions</li><li>Playwright</li></ul></div>
         <div>
           <h3>AI Fundamentals</h3>
           <ul class="tags">
@@ -75,13 +83,13 @@
         <article class="project" data-reveal>
           <p class="meta">Backend · Personal project</p>
           <h3>Product Service</h3>
-          <p>A Java and Spring Boot API for managing a product catalog. Products reference categories stored in MySQL through Spring Data JPA.</p>
+          <p>I built a product catalog API with Java, Spring Boot, and Spring Data JPA. Each product response includes its category from MySQL, so a client can fetch both in one request.</p>
           <div class="project-links">
             <a href="https://github.com/umangsahu/product-service/tree/feature" target="_blank" rel="noopener" aria-describedby="new-tab-note">Source code <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/umangsahu/product-service/blob/feature/README.md" target="_blank" rel="noopener" aria-describedby="new-tab-note">Setup guide <span aria-hidden="true">↗</span></a>
           </div>
           <div class="api-demo">
-            <p><strong>API demo</strong> · Sample catalog</p>
+            <p><strong>API demo</strong> · Fetch a sample product or create a sample category to see the JSON response.</p>
             <div class="demo-actions" hidden>
               <button type="button" data-product>Fetch product</button>
               <button type="button" data-category>Create category</button>
@@ -97,7 +105,7 @@
         <article class="project" data-reveal>
           <p class="meta">Internal tools · Great Learning</p>
           <h3>Program Launch Management</h3>
-          <p>A shared workspace for program setup, fees, themes, and publishing. Automated Playwright checks help teams verify pages before launch.</p>
+          <p>Our team brought program setup, fees, and publishing into one workspace for marketing. We cut launch time from 2–3 days to 1 day.</p>
           <details class="workflow">
             <summary>Explore the publishing workflow</summary>
             <ol>
@@ -109,9 +117,9 @@
           <details class="contributions">
             <summary>Read my contributions</summary>
             <ul>
-              <li>Built the React interface that teams used to launch over 50 programs.</li>
-              <li>Added audit logs so teams could trace who published a change and why.</li>
-              <li>Automated release checks with Playwright, replacing 1.5–2 hours of manual verification.</li>
+              <li>Built the React interface for configuring programs and previewing pages.</li>
+              <li>Added an audit trail showing who published each change, what changed, and why.</li>
+              <li>Wrote Playwright checks that replaced 1.5–2 hours of manual testing per publish.</li>
             </ul>
           </details>
         </article>
@@ -124,11 +132,11 @@
       <ol class="experience">
         <li data-reveal>
           <span class="dates">Aug 2025–Present</span>
-          <div><h3>Associate SDE · Great Learning</h3><p>Helped cut program launch turnaround from 3 days to about 4 hours.</p></div>
+          <div><h3>Associate Software Development Engineer · Great Learning</h3><p>Built browser-side image compression so the marketing team could upload smaller images. A 1 MB image could shrink to about 100 KB.</p></div>
         </li>
         <li data-reveal>
-          <span class="dates">Jul 2024–Jul 2025</span>
-          <div><h3>Software Developer · MountBlue at Great Learning</h3><p>Worked on Connect Now, which contributed to about 30% more enrollments.</p></div>
+          <span class="dates">Jul 2024–Aug 2025</span>
+          <div><h3>Software Developer · MountBlue at Great Learning</h3><p>Helped build Connect Now so learners could request an immediate callback. The team saw a 5% increase in enrollments over five months.</p></div>
         </li>
         <li data-reveal>
           <span class="dates">Jun 2023–Mar 2024</span>
@@ -140,7 +148,7 @@
 
 
     <section class="section contact" data-reveal id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact</h2>
+      <h2 id="contact-title">Let’s talk about backend roles</h2>
       <div class="links">
         <a class="primary" href="https://linkedin.com/in/umangsahu" target="_blank" rel="noopener" aria-describedby="new-tab-note">Message me on LinkedIn <span aria-hidden="true">↗</span></a>
         <a href="https://github.com/umangsahu?tab=repositories" target="_blank" rel="noopener" aria-describedby="new-tab-note">Browse my GitHub repositories <span aria-hidden="true">↗</span></a>
