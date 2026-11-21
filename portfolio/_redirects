@@ -1,0 +1,4 @@
+# Consolidate the default Netlify hostname onto the custom domain.
+# Preserve each requested path and let Netlify forward query parameters.
+https://umang-sahu.netlify.app/* https://umang-sahu.com/:splat 301!
+http://umang-sahu.netlify.app/* https://umang-sahu.com/:splat 301!
